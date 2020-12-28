@@ -11,10 +11,12 @@ const options = {
 };
 
 mongoose.connect(db_link, options, function (err) {
-     if (err)
-         console.error("Error occurred while connecting to DB!");
-     else
+     if (err) {
+        console.error(err);
+        console.error("Error occurred while connecting to DB!");
+      } else {
          console.log("Database connection established successfully");
+      }
 });
 
 app.get('/homepage', function(req, res) {
