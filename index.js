@@ -18,7 +18,7 @@ mongoose.connect(db_link, options, function (err) {
 });
 
 app.get('/homepage', function(req, res) {
-       res.send("Hello, World! Welcome to kickstarter for backend API development ");
+       res.send("Hello Lemons!");
 });
 
 app.listen(port, function() {
